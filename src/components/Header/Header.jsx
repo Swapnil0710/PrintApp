@@ -30,27 +30,28 @@ class Header extends Component {
     document.body.appendChild(node);
   }
   getBrand() {
-    var name;
+    // Todo: Good thing to be handled later
+    var name = 'Printing Application';
     dashboardRoutes.map((prop, key) => {
       if (prop.collapse) {
         prop.views.map((prop, key) => {
           if (prop.path === this.props.location.pathname) {
-            name = prop.name;
+            //name = prop.name;
           }
-          return null;
+          return name;
         });
       } else {
         if (prop.redirect) {
           if (prop.path === this.props.location.pathname) {
-            name = prop.name;
+            //name = prop.name;
           }
         } else {
           if (prop.path === this.props.location.pathname) {
-            name = prop.name;
+            //name = prop.name;
           }
         }
       }
-      return null;
+      return name;
     });
     return name;
   }

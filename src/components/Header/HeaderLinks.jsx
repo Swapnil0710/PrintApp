@@ -7,7 +7,7 @@ class HeaderLinks extends Component {
       <div>
         <i className="fa fa-globe" />
         <b className="caret" />
-        <span className="notification">5</span>
+        <span className="notification"></span>
         <p className="hidden-lg hidden-md">Notification</p>
       </div>
     );
